@@ -1,0 +1,449 @@
+*{
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+
+  
+}
+body{
+    background-color: rgb(228, 230, 236);
+}
+
+/* ✅ Make header & navbar sticky */
+header {
+    background-color: rgb(28, 27, 27);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .navbar {
+    display: flex;
+    align-items: center;
+    background-color: rgb(28, 27, 27);
+    color: white;
+    position: sticky;
+    top: 0;              
+    z-index: 1000;
+    width: 100%;          
+  }
+  
+ 
+  .sidebar {
+    background-color: white;
+    width: 17%;
+    height: calc(100vh - 70px); 
+    position: sticky;
+    top: 60px;             
+    overflow-y: auto;     
+    border-right: 1px solid #ccc; 
+  }
+  
+
+ 
+  
+nav{
+    display: flex;
+    background-color: rgb(28, 27, 27);
+    position: sticky;
+    top: 0;          
+    z-index: 1000;
+}
+.navbar img{
+    width: 20%;
+}
+.border{
+   border-right: 1px solid white;
+   height: 20px;
+   width: 0;
+   margin-left: -32%;
+   margin-right: 15PX;
+}
+.title{
+    font-size: 20px;
+    margin-right: 24%;
+    font-weight: 500;
+}
+input{
+    width: 170%;
+    padding: 10px 16px;
+    background-color: rgb(65, 65, 65);
+    border: none;
+    border-radius: 3px;
+
+ 
+}
+input::placeholder{
+    color: rgb(187, 185, 185);
+    font-family: "Outfit", sans-serif;
+  font-weight: 700;
+  font-size: 13px;
+
+}
+.buttons{
+    margin-left: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Outfit", sans-serif;
+    font-weight: 500;
+}
+#btn-1 button{
+    padding: 5px 10px;
+    padding: 10px 16px;
+    background-color: rgb(38, 37, 37);
+    border: none;
+    color: white;
+    font-size: 15px;
+    border-radius: 20px;
+    font-family: "Outfit", sans-serif;
+    font-weight: 600;
+}
+#btn-2 button{
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 23px;
+    font-weight: 300;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+#btn-3 button{
+    padding: 10px 13px;
+    font-size: 16px;
+    background-color: black;
+    color: white;
+    font-weight: 600;
+    border: none;
+}
+
+  
+.sidebar ol ul{
+    padding-top: 20px;
+    margin-left: 20px;
+  
+}
+.sidebar a{
+    text-decoration: none;
+    font-size: 15px;
+    color: black;
+    
+    margin-top: 15px;
+    margin-bottom: 200px;
+    background-color: transparent;
+    padding: 10px 20px;
+    /* padding-right: 90px; */
+    font-family: "Outfit", sans-serif;
+
+}
+.sidebar a:hover{
+    background-color: rgb(228, 230, 236);
+    padding: 10px 20px;
+    padding-right: 80px;
+    transition: none;
+    border-radius: 5px;
+
+}
+.sidebar ul .home{
+    padding-right: 90px;
+}
+.sidebar ul .account{
+  padding-right: 50px;
+}
+hr{
+
+    width: 90%;
+    margin-left: 12px;
+}
+.Analytics{
+ 
+   
+        margin-left: 23%;     
+        background-color: white;
+        padding: 10px;
+        height: 25vh;
+        top: 0;
+        margin-top: -520px;
+        display: flex;
+
+        justify-content: space-between;
+        margin-right: 25%;
+        border-radius: 10px;
+      
+}
+.Analytics .analytics-box .line-1{
+    display: flex;
+    margin-bottom: 60px;
+    gap: 270px;
+    margin-top: 5px;
+    margin-left: 20px;
+
+    
+
+
+}
+.Analytics .analytics-box .line-2{
+    display: flex;
+    margin-left: 20px;
+    gap: 60px;
+}
+
+.Analytics .analytics-box .line-2 .headings{
+    color: gray;
+    
+}
+.shop-health {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    padding: 20px;
+    width: 250px;
+    height: 140px;
+    margin-top: -185px;
+    font-family: "Outfit", sans-serif;
+    margin-left: 76%;
+  }
+  
+  .health-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 12px;
+  }
+  
+  .health-header i {
+    color: #111;
+    font-size: 18px;
+  }
+  
+  .health-header h3 {
+    font-size: 16px;
+    margin: 0;
+    color: #111;
+  }
+  
+  .health-status .status {
+    font-weight: 600;
+    font-size: 18px;
+    color: #1e8e3e; 
+    margin: 0 0 6px 0;
+  }
+  
+  .health-status .description {
+    font-size: 13px;
+    color: #666;
+    margin: 0;
+    line-height: 1.4;
+  }
+  .Headings{
+    margin-left: 23%;
+    margin-top: 3%;
+  }
+  .Headings h4{
+    font-size: 17px;
+  }
+  .Headings p{
+    color: rgb(85, 83, 83);
+    font-size: 12px;
+  }
+  .Earn {
+    background-color: rgb(248, 205, 220);
+    margin-left: 23%;
+    margin-right: 5%;
+    padding: 20px 20px;
+    margin-top: 10px;
+  }
+  .Earn .earnbox p{
+    font-size: 13px;
+    color: rgb(239, 76, 103)
+  }
+  .Earn .earnbox h4{
+    color: rgb(239, 76, 103)
+  }
+  .Earn .earnbox button{
+    padding: 5px 15px;
+    background-color: transparent;
+    border: 2px solid  rgb(239, 76, 103);
+    color:  rgb(239, 76, 103);
+    border-radius: 4px;
+    margin-top: 5px;
+    font-weight: 600;
+  }
+  .success-path {
+    background: #fff;
+    border-radius: 10px;
+    padding: 25px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    max-width: 1100px;
+    margin: 30px auto;
+    font-family: "Poppins", sans-serif;
+    width: 69%;
+    margin-left: 23%;
+  }
+  
+
+ 
+  
+  .success-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .slider-wrapper {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .card {
+    min-width: 100%;
+    background: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+  
+  .arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #eee;
+    border: none;
+    border-radius: 50%;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    z-index: 2;
+  }
+  
+  .arrow.left {
+    left: 10px;
+    display: none; /* hidden initially */
+  }
+  
+  .arrow.right {
+    right: 10px;
+  }
+  
+  .affilateProgram{
+    margin-left: 23%;
+    margin-right: 20px;
+    width: 73%;
+    background-color: white;
+    height: 300px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .affilateProgram .AffilateCard h1{
+   
+    font-size: 20px;
+    margin-bottom: 18%;
+  }
+  .affilateProgram .AffilateCard p{
+    margin-top: 15%;
+    font-weight: 600;
+  }
+  .affilateProgram .AffilateCard button{
+    background-color: rgb(228, 230, 236);
+    padding: 10px 170px;
+    margin-top: 5px;
+    border: none;
+    border-radius: 3px;
+    font-weight: 900;
+  }
+  .boostExposure{
+    margin-left: 23%;
+    background-color: white;
+    margin-top: 25px;
+    width: 67%;
+    border-radius: 5px;
+    padding: 30px 20px;
+  }
+  .boostExposure .boxes{
+    display: flex;
+    margin-top: 30px;
+  }
+  .boostExposure .boxes .h{
+    margin-top: 19%;
+    font-weight: 400;
+    font-size: 23px;
+
+  }
+  .boostExposure .boxes p{
+    font-size: 13px;
+  }
+  .boostExposure .box1{
+    padding: 10px 18px;
+    background-color: rgb(230, 231, 232);
+    margin-right: 20px;
+    width: 400px;
+    
+  }
+  .boostExposure .box2{
+    padding: 10px 18px;
+    background-color: rgb(230, 231, 232);
+    width: 390px;
+    
+  }
+  .boostExposure button{
+    margin-top: 50px;
+    padding: 10px 190px;
+    border: none;
+    background-color: white;
+  }
+  .boostExposure button .btn{
+    margin-top: 50px;
+   
+  }
+  .box1:hover{
+    background-color: rgb(188, 189, 193);
+  }
+  .box2:hover{
+    background-color: rgb(188, 189, 193);
+  }
+  .sales{
+    margin-left: 23%;
+    background-color: white;
+    margin-top: 25px;
+    width: 70%;
+    border-radius: 5px;
+    padding: 40px 30px;
+  
+  }
+  .sales .salesbody{
+    margin-top: 50px;
+    display: flex;
+    gap: 50px;
+    background-color: rgb(230, 231, 232);
+    padding: 60px 40px;
+  }
+  .sales .salesbody:hover{
+    background-color: rgb(188, 189, 193);
+  }
+  .tools{
+    margin-left: 23%;
+    margin-top: 25px;
+    background-color: white;
+    width: 70%;
+    border-radius: 5px;
+    padding: 20px 30px;
+  }
+  .tools .toolsbox .line{
+    margin-left: 20px;
+    display: flex;
+    margin-bottom: 50px;
+    gap: 20%;
+  }

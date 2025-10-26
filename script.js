@@ -37,3 +37,22 @@ prevBtn.addEventListener("click", () => {
 });
 
 updateSlider();
+
+const menuBtn = document.getElementById("menuBtn");
+    const menuDropdown = document.getElementById("menuDropdown");
+    const arrowIcon = document.getElementById("arrowIcon");
+
+    // Toggle dropdown open/close
+    menuBtn.addEventListener("click", (e) => {
+      e.preventDefault(); // prevent link navigation
+      menuDropdown.classList.toggle("show");
+      arrowIcon.classList.toggle("rotate");
+    });
+
+    // Close dropdown when clicked outside
+    window.addEventListener("click", (e) => {
+      if (!menuBtn.contains(e.target)) {
+        menuDropdown.classList.remove("show");
+        arrowIcon.classList.remove("rotate");
+      }
+    });

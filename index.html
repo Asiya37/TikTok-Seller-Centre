@@ -25,17 +25,20 @@
             </div>
             <div class="border"></div>
             <div class="title">Seller Centre</div>
-            <div class="search">
-                <input type="text"
-                    placeholder="Search: 'Shopify'                                                                                      Ctrl+K ">
+          
+                <div class="search-box">
+                    <i class="fa fa-search"></i>
+                    <input type="text" placeholder="Search: 'Shopify'   Ctrl+K ">
+                  </div>
+                                                                                
 
-            </div>
+            
             <div class="buttons">
 
 
                 <div id="btn-1" class="btn">
 
-                    <button>In Progress</button>
+                  <a href="#"> <p>10</p> In progress</a>
                 </div>
                 <div id="btn-2" class="btn">
                     <button class="messages"><i class="fa-regular fa-bell"></i></button>
@@ -51,50 +54,66 @@
     </header>
     <section class="sidebar">
         <div class="sidebox">
-            <ol>
-                <ul class="home"><a href="#">Homepage</a> </ul>
-                <br>
-                <hr>
-                <ul class="product"><a href="#">Products</a></ul>
-                <br>
-                <hr>
-                <ul class="live"> <a href="#">LIVE & video</a> </ul>
-                <ul class="growth"> <a href="#">Growth</a></ul>
-                <br>
-                <hr>
-                <ul class="analytics"> <a href="#">Analytics</a></ul>
-                <ul class="account"> <a href="#">Account Health</a></ul>
-                <ul class="finance"> <a href="#">Finance</a> </ul>
-                <br>
-                <hr>
-                <ul class="academy"> <a href="#">Academy</a></ul>
-            </ol>
+          <ul>
+            <li class="home"><a href="#"><i class="fa-solid fa-house"></i> Homepage</a></li>
+            <hr>
+      
+            <li class="product"><a href="#"><i class="fa-solid fa-box"></i> Products</a></li>
+            <hr>
+      
+            <li class="live"><a href="#"><i class="fa-solid fa-video"></i> LIVE & Video</a></li>
+            <li class="growth"><a href="#"><i class="fa-solid fa-chart-line"></i> Growth</a></li>
+            <hr>
+      
+            <li class="analytics"><a href="#"><i class="fa-solid fa-chart-pie"></i> Analytics</a></li>
+            <li class="account"><a href="#"><i class="fa-solid fa-user-shield"></i> Account Health</a></li>
+            <li class="finance"><a href="#"><i class="fa-solid fa-coins"></i> Finance</a></li>
+            <hr>
+      
+            <li class="academy"><a href="#"><i class="fa-solid fa-graduation-cap"></i> Academy</a></li>
+          </ul>
         </div>
-    </section>
+      </section>
+      
     <section class="Box-1">
         <div class="Analytics">
             <div class="analytics-box">
                 <div class="line-1">
-                    <a href="#">Last 7 days</a>
+                    <div class="dropdown">
+                        <a class="menu" id="menuBtn" href="#">
+                          Last 7 Days
+                          <i class="fa-solid fa-angle-down" id="arrowIcon"></i>
+                        </a>
+                    
+                        <div class="dropdown-content" id="menuDropdown">
+                          <a href="#">Today</a>
+                          <a href="#">Last 7 Days</a>
+                          <a href="#">Last 28 Days</a>
+                        </div>
+                      </div>
 
-                    <p>Updated on 23 Oct 19:00 (GMT+00:00) <a href="#">edit</a></p>
+                    <p>Updated on 23 Oct 19:00 (GMT+00:00) <a class="edit" href="#"><i class="fa-solid fa-pen-to-square"></i>
+                    </a></p>
 
                 </div>
                 <div class="line-2">
                     <div class="box">
-                        <p class="headings">GMV</p>
+                        <p class="headings">GMV
+                            <i style="font-size: 10px;" class="fa-solid fa-chevron-right"></i>
+                            
+                        </p>
                         <p>$0.00</p>
                     </div>
                     <div id="box-2" class="box">
-                        <p class="headings">Customers</p>
+                        <p class="headings">Customers  <i style="font-size: 10px;" class="fa-solid fa-chevron-right"></i></p>
                         <p>$0.00</p>
                     </div>
                     <div id="box-3" class="box">
-                        <p class="headings">Ordered SKUs</p>
+                        <p class="headings">Ordered SKUs <i style="font-size: 10px;" class="fa-solid fa-chevron-right"></i></p>
                         <p>$0.00</p>
                     </div>
                     <div id="box-4" class="box">
-                        <p class="headings">Visitors</p>
+                        <p class="headings">Visitors <i style="font-size: 10px;" class="fa-solid fa-chevron-right"></i></p>
                         <p>20</p>
                         <p style="color: green ; font-size:13px; font-weight:900">150%</p>
                     </div>

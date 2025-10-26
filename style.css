@@ -13,10 +13,11 @@ body{
 
 /* ✅ Make header & navbar sticky */
 header {
-    background-color: rgb(28, 27, 27);
+
     position: sticky;
     top: 0;
     z-index: 1000;
+    height: 400%;  
   }
   
   .navbar {
@@ -25,7 +26,9 @@ header {
     background-color: rgb(28, 27, 27);
     color: white;
     position: sticky;
-    top: 0;              
+    height: 60px;
+    top: 0; 
+              
     z-index: 1000;
     width: 100%;          
   }
@@ -57,17 +60,43 @@ nav{
 .border{
    border-right: 1px solid white;
    height: 20px;
-   width: 0;
-   margin-left: -32%;
-   margin-right: 15PX;
+   margin-left: -430px;
+   margin-right: 20px;
+   
+  
+  
 }
 .title{
     font-size: 20px;
     margin-right: 24%;
     font-weight: 500;
+    
 }
+.search-box {
+  position: relative;
+  width: 350px; /* adjust size */
+}
+
+.search-box input {
+ 
+  padding: 10px 15px 10px 40px; /* left padding for icon space */
+  
+  border-radius: 5px;
+  outline: none;
+  font-size: 14px;
+}
+
+.search-box i {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
+  color: white;
+  font-size: 16px;
+}
+
 input{
-    width: 170%;
+   width: 90%;
     padding: 10px 16px;
     background-color: rgb(65, 65, 65);
     border: none;
@@ -75,6 +104,7 @@ input{
 
  
 }
+
 input::placeholder{
     color: rgb(187, 185, 185);
     font-family: "Outfit", sans-serif;
@@ -82,75 +112,179 @@ input::placeholder{
   font-size: 13px;
 
 }
+
 .buttons{
-    margin-left: 200px;
+    margin-left: 40px;
     display: flex;
+    gap: 20px;
     align-items: center;
     justify-content: center;
     font-family: "Outfit", sans-serif;
     font-weight: 500;
 }
-#btn-1 button{
+#btn-1 a{
+  text-decoration: none;
+  display: flex;
+  color: white;
+  background-color: rgb(65, 63, 63);
+  padding: 8px 8px ;
+  font-size: 14px;
+  border-radius: 20px;
+ 
+}
+#btn-1 p{
+  background-color: rgb(234, 49, 49);
+  border: 1px solid white;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  padding: 0px 4px 0px;
+  font-size: 12px;
+  font-family: "Outfit", sans-serif;
+font-weight: 700;
+margin-right: 5px;
+}
+
+#btn-1 button a{
     padding: 5px 10px;
     padding: 10px 16px;
     background-color: rgb(38, 37, 37);
     border: none;
     color: white;
-    font-size: 15px;
+    font-size: 12px;
     border-radius: 20px;
     font-family: "Outfit", sans-serif;
     font-weight: 600;
+    
 }
+
 #btn-2 button{
     background-color: transparent;
     border: none;
     color: white;
     font-size: 23px;
     font-weight: 300;
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: -5px;
+
+   
+   
 }
+
 #btn-3 button{
-    padding: 10px 13px;
+    padding: 10px 35px;
     font-size: 16px;
     background-color: black;
     color: white;
     font-weight: 600;
     border: none;
-}
+    margin-left: -2px;
+} 
 
   
-.sidebar ol ul{
+.sidebar ul li{
     padding-top: 20px;
-    margin-left: 20px;
-  
+    margin-left: 5px;
+    list-style: none;
+   color: black;
+   
+    font-family: "Outfit", sans-serif;
+ 
 }
-.sidebar a{
+.sidebar ul li a{
+  text-decoration: none;
+  list-style: none;
+  color: black;
+
+  background-color: transparent;
+  font-family: "Outfit", sans-serif;
+  font-size: 15px;
+}
+
+/* .sidebar ul li{
     text-decoration: none;
     font-size: 15px;
     color: black;
     
     margin-top: 15px;
-    margin-bottom: 200px;
+  
     background-color: transparent;
     padding: 10px 20px;
     /* padding-right: 90px; */
-    font-family: "Outfit", sans-serif;
 
-}
-.sidebar a:hover{
-    background-color: rgb(228, 230, 236);
-    padding: 10px 20px;
-    padding-right: 80px;
-    transition: none;
-    border-radius: 5px;
 
+
+
+.sidebar ul .home a{
+  background-color: transparent;
+padding: 8px;
+padding-right: 115px;
+  
 }
 .sidebar ul .home{
-    padding-right: 90px;
+  margin-bottom: 20px;
+}
+.sidebar ul .product{
+  margin-bottom: 20px;
+
+
+}
+.sidebar ul .product a{
+  padding: 8px;
+padding-right: 135px;
+background-color: transparent;
+}
+.sidebar ul .growth{
+  margin-bottom: 20px;
+}
+.sidebar ul .growth a{
+  padding: 8px;
+  background-color: transparent;
+}
+.sidebar ul .live a{
+  padding: 8px;
+padding-right: 105px;
+background-color: transparent;
+}
+.sidebar ul .finance{
+  margin-bottom: 20px;
+}
+.sidebar ul .finance a{
+  padding: 8px;
+  padding-right: 140px;
+  background-color: transparent;
+
 }
 .sidebar ul .account{
   padding-right: 50px;
+}
+.sidebar ul .account a{
+ 
+    padding: 8px;
+    padding-right: 43px;
+    background-color: transparent;
+}
+.sidebar ul .analytics a{
+
+    padding: 8px;
+    padding-right: 130px;
+    background-color: transparent;
+}
+.sidebar ul .academy a{
+ 
+    padding: 8px;
+    padding-right: 126px;
+    background-color: transparent;
+}
+.sidebar ul a:hover{
+  background-color: rgb(225, 230, 234);
+  color: black;
+  border-radius: 5px;
+
+}
+.sidebar ul a:active{
+  color: rgb(10, 177, 130);
 }
 hr{
 
@@ -160,7 +294,7 @@ hr{
 .Analytics{
  
    
-        margin-left: 23%;     
+        margin-left: 21%;     
         background-color: white;
         padding: 10px;
         height: 25vh;
@@ -175,7 +309,7 @@ hr{
 }
 .Analytics .analytics-box .line-1{
     display: flex;
-    margin-bottom: 60px;
+    margin-bottom: 40px;
     gap: 270px;
     margin-top: 5px;
     margin-left: 20px;
@@ -184,10 +318,123 @@ hr{
 
 
 }
+.Analytics .analytics-box .line-1 a{
+ text-decoration: none;
+ list-style: none;
+ color: black;
+ font-size: 15px;
+   padding: 5px 2px;
+  border-radius: 5px;
+ background-color: transparent;
+
+}
+.Analytics .analytics-box .line-1 a:hover{
+  background-color: rgb(232, 230, 230);
+  padding: 5px 2px;
+  border-radius: 5px;
+
+}
+.Analytics .analytics-box .line-1 p{
+  margin-left: 50px;
+  font-size: 12px;
+  color: rgb(158, 155, 155);
+}
+.Analytics .analytics-box .line-1 i{
+ color: rgb(158, 155, 155);
+}
+.Analytics .analytics-box .line-2 .box{
+  background-color: transparent;
+  padding: 5px 10px;
+
+  margin-right: -80px;
+  padding-right: 70px;
+  border-radius: 10px;
+}
+.Analytics .analytics-box .line-2 .box:hover{
+  background-color: rgb(243, 234, 234);
+  color: black;
+
+}
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+
+    .menu {
+      text-decoration: none;
+      color: #333;
+    
+      padding: 8px 15px;
+      border-radius: 6px;
+      font-size: 14px;
+      background-color: #fff;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 2px;
+      width: 90px;
+      transition: 0.2s ease;
+    }
+
+    .menu:hover {
+      background-color: #f0f0f0;
+    }
+
+   
+    .menu i {
+      font-size: 12px;
+      transition: transform 0.3s ease;
+    }
+
+  
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #fff;
+      min-width: 150px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      top: 42px;
+      left: 0;
+      z-index: 100;
+      overflow: hidden;
+    }
+
+    .dropdown-content a {
+      display: block;
+      padding: 10px 15px;
+      text-decoration: none;
+      color: #333;
+      font-size: 14px;
+      transition: background 0.2s ease;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #f2f2f2;
+    }
+
+    /* Show dropdown when active */
+    .show {
+      display: block;
+      animation: fadeIn 0.2s ease;
+    }
+
+    /* Rotate arrow when dropdown open */
+    .rotate {
+      transform: rotate(180deg);
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-5px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+ 
 .Analytics .analytics-box .line-2{
     display: flex;
     margin-left: 20px;
-    gap: 60px;
+    margin-top: -10px;
+    gap: 90px;
 }
 
 .Analytics .analytics-box .line-2 .headings{
